@@ -30,6 +30,10 @@ class JobSerializer(serializers.ModelSerializer):
             "applied_date",
             "created_at",
             "updated_at",
+            "job_description",
+            "salary",
+            "jobtype",
+            "location"
         ]
         read_only_fields = ["id", "created_at", "updated_at"]
         
