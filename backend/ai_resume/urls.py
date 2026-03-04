@@ -1,0 +1,7 @@
+from django.urls import path
+from .views import ResumeAnalysisView
+
+
+urlpatterns = [
+    path('analyze/',ResumeAnalysisView.as_view())
+]
