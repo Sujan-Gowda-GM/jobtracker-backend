@@ -8,7 +8,7 @@ class JobApplication(models.Model):
     job_role=models.CharField(max_length=100)
     status=models.CharField(max_length=50,choices=[("Applied","Applied"),("Interview","Interview"),("Offer","Offer"),("Rejected","Rejected")])
     ats_score = models.IntegerField(null=True, blank=True)
-    applied_date=models.DateField()
+    applied_date=models.DateField(auto_now_add=True)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     job_description=models.URLField(max_length=500, blank=True, null= True)
